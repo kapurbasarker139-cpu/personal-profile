@@ -1,0 +1,939 @@
+/* ===========================
+   Google Font
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+:root{
+
+    --bg:#0f172a;
+    --card:rgba(255,255,255,.08);
+    --text:#ffffff;
+    --blue:#3b82f6;
+    --light:#cbd5e1;
+    --shadow:0 10px 35px rgba(0,0,0,.4);
+
+}
+
+body{
+
+    background:linear-gradient(135deg,#020617,#0f172a,#1e3a8a);
+    color:var(--text);
+    overflow-x:hidden;
+
+}
+
+section{
+
+    padding:90px 10%;
+
+}
+
+.title{
+
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:white;
+
+}
+header{
+
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:999;
+
+    backdrop-filter:blur(15px);
+
+    background:rgba(0,0,0,.25);
+
+}
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 10%;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:var(--blue);
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:30px;
+
+    list-style:none;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:var(--blue);
+
+}
+
+#theme-btn{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:var(--blue);
+
+    color:white;
+
+    font-size:18px;
+
+}
+.home{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+min-height:100vh;
+
+gap:60px;
+
+}
+
+.left{
+
+flex:1;
+
+}
+
+.left h3{
+
+font-size:30px;
+
+color:var(--light);
+
+}
+
+.left h1{
+
+font-size:65px;
+
+margin:10px 0;
+
+}
+
+.left h2{
+
+font-size:34px;
+
+color:var(--blue);
+
+margin-bottom:20px;
+
+}
+
+.left p{
+
+font-size:18px;
+
+line-height:1.8;
+
+max-width:600px;
+
+color:#dbeafe;
+
+}
+.buttons{
+
+margin-top:35px;
+
+display:flex;
+
+gap:20px;
+
+}
+
+.btn{
+
+padding:15px 35px;
+
+background:var(--blue);
+
+color:white;
+
+text-decoration:none;
+
+border-radius:40px;
+
+font-weight:600;
+
+transition:.4s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+.btn2{
+
+padding:15px 35px;
+
+border:2px solid white;
+
+text-decoration:none;
+
+color:white;
+
+border-radius:40px;
+
+transition:.4s;
+
+}
+
+.btn2:hover{
+
+background:white;
+
+color:black;
+
+}
+.right{
+
+flex:1;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.right img{
+
+width:380px;
+
+height:380px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:6px solid var(--blue);
+
+box-shadow:
+
+0 0 30px #3b82f6,
+
+0 0 70px #2563eb;
+
+transition:.5s;
+
+}
+
+.right img:hover{
+
+transform:scale(1.05);
+
+}
+/* ===========================
+   Glass Card
+=========================== */
+
+.card{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:var(--card);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.card h3{
+
+    color:var(--blue);
+
+    margin-bottom:15px;
+
+    font-size:28px;
+
+}
+
+.card p{
+
+    line-height:1.9;
+
+    color:#e2e8f0;
+
+    font-size:17px;
+
+}
+
+/* ===========================
+   Skills
+=========================== */
+
+.skills{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.skill{
+
+    margin-bottom:35px;
+
+}
+
+.skill h3{
+
+    margin-bottom:10px;
+
+    font-size:22px;
+
+}
+
+.bar{
+
+    width:100%;
+
+    height:20px;
+
+    background:#1e293b;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+}
+
+.fill{
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    padding-right:15px;
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    border-radius:50px;
+
+}
+
+.photoshop{
+
+    width:95%;
+
+    background:linear-gradient(90deg,#2563eb,#38bdf8);
+
+}
+
+.design{
+
+    width:90%;
+
+    background:linear-gradient(90deg,#0ea5e9,#06b6d4);
+
+}
+/* ===========================
+   Contact
+=========================== */
+
+.contact-box{
+
+    max-width:700px;
+
+    margin:auto;
+
+    background:var(--card);
+
+    backdrop-filter:blur(20px);
+
+    padding:40px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:var(--shadow);
+
+}
+
+.contact-box p{
+
+    margin:18px 0;
+
+    font-size:18px;
+
+    color:#f8fafc;
+
+}
+
+.contact-box i{
+
+    color:var(--blue);
+
+    width:35px;
+
+    font-size:22px;
+
+}
+.social{
+
+    margin-top:30px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.social a{
+
+    width:55px;
+
+    height:55px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#1e293b;
+
+    border-radius:50%;
+
+    font-size:22px;
+
+    transition:.4s;
+
+}
+
+.social a:hover{
+
+    background:var(--blue);
+
+    transform:translateY(-8px);
+
+}
+footer{
+
+    padding:30px;
+
+    text-align:center;
+
+    background:#020617;
+
+    margin-top:80px;
+
+}
+
+footer p{
+
+    color:#94a3b8;
+
+    font-size:15px;
+
+}
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.home{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+    padding-top:120px;
+
+}
+
+.left h1{
+
+    font-size:48px;
+
+}
+
+.left h2{
+
+    font-size:28px;
+
+}
+
+.right img{
+
+    width:300px;
+
+    height:300px;
+
+}
+
+nav{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+section{
+
+    padding:80px 7%;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.title{
+
+    font-size:32px;
+
+}
+
+.left h1{
+
+    font-size:38px;
+
+}
+
+.left h2{
+
+    font-size:24px;
+
+}
+
+.left p{
+
+    font-size:16px;
+
+}
+
+.buttons{
+
+    flex-direction:column;
+
+}
+
+.btn,
+.btn2{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.right img{
+
+    width:240px;
+
+    height:240px;
+
+}
+
+.contact-box{
+
+    padding:25px;
+
+}
+
+.social{
+
+    justify-content:center;
+
+}
+
+}
+/* =====================================
+   Animated Gradient Background
+===================================== */
+
+body{
+    background: linear-gradient(-45deg,#020617,#0f172a,#1e3a8a,#2563eb);
+    background-size:400% 400%;
+    animation:gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+/* =====================================
+   Floating Image Animation
+===================================== */
+
+.right img{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+/* =====================================
+   Card Hover
+===================================== */
+
+.card,
+.contact-box{
+
+    transition:.4s;
+
+}
+
+.card:hover,
+.contact-box:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 50px rgba(59,130,246,.4);
+
+}
+/* =====================================
+   Navigation Underline
+===================================== */
+
+nav ul li{
+
+    position:relative;
+
+}
+
+nav ul li::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:3px;
+
+    background:#3b82f6;
+
+    transition:.4s;
+
+}
+
+nav ul li:hover::after{
+
+    width:100%;
+
+}
+/* =====================================
+   Buttons
+===================================== */
+
+.btn{
+
+    box-shadow:0 0 20px rgba(59,130,246,.5);
+
+}
+
+.btn:hover{
+
+    box-shadow:
+
+    0 0 25px #2563eb,
+
+    0 0 50px #3b82f6;
+
+}
+
+.btn2:hover{
+
+    box-shadow:
+
+    0 0 25px white;
+
+}
+/* =====================================
+   Profile Glow
+===================================== */
+
+.right img:hover{
+
+    box-shadow:
+
+    0 0 30px #2563eb,
+
+    0 0 70px #3b82f6,
+
+    0 0 120px #60a5fa;
+
+}
+/* =====================================
+   Section Animation
+===================================== */
+
+section{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/* =====================================
+   Dark Theme
+===================================== */
+
+.dark{
+
+    --bg:#ffffff;
+
+    --card:#f8fafc;
+
+    --text:#111827;
+
+    --light:#334155;
+
+}
+
+.dark body{
+
+    background:#f1f5f9;
+
+}
+
+.dark nav{
+
+    background:white;
+
+}
+
+.dark nav a{
+
+    color:#111827;
+
+}
+
+.dark .card{
+
+    background:white;
+
+}
+
+.dark .contact-box{
+
+    background:white;
+
+}
+
+.dark .card p{
+
+    color:#334155;
+
+}
+
+.dark footer{
+
+    background:#e2e8f0;
+
+}
+
+.dark footer p{
+
+    color:#334155;
+
+}
+/* =====================================
+   Scrollbar
+===================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0f172a;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#3b82f6;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#2563eb;
+
+}
+#topBtn{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 0 20px rgba(37,99,235,.5);
+    z-index: 999;
+}
+.active{
+
+color:#3b82f6;
+
+font-weight:600;
+
+}
+.hidden{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:.8s;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}

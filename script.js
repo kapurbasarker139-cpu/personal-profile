@@ -145,34 +145,26 @@ observer.observe(sec);
 // Gallery Lightbox
 // ===============================
 
+// ===== Lightbox =====
+
 const galleryImages = document.querySelectorAll(".gallery img");
-
 const lightbox = document.getElementById("lightbox");
-
 const lightboxImg = document.getElementById("lightbox-img");
-
 const closeBtn = document.querySelector(".close");
 
-galleryImages.forEach(img=>{
-
-    img.onclick=()=>{
-
-        lightbox.style.display="flex";
-
-        lightboxImg.src=img.src;
-
-    }
-
+galleryImages.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
 });
 
-closeBtn.onclick=()=>{
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
 
-    lightbox.style.display="none";
-
-}
-
-lightbox.onclick=()=>{
-
-    lightbox.style.display="none";
-
-}
+lightbox.addEventListener("click", (e) => {
+    if(e.target === lightbox){
+        lightbox.style.display = "none";
+    }
+});
